@@ -93,3 +93,15 @@ body {
   color: rgb(77, 166, 136) ;
   border-bottom: 2px solid rgb(77, 166, 136) ;
 }
+
+
+
+
+
+/* Home page */
+
+.coverPage{
+  background-image: url(img/hero4.png);
+  height: 100vh;
+  width: 100%;
+}
