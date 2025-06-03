@@ -283,3 +283,42 @@ body {
    bottom: 30px;
   cursor: pointer ;
 }
+
+
+/* Banner */
+#banner {
+  /* 设置垂直居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  text-align: center;
+  background-image: url(img/banner/b2.jpg);
+  background-size: cover;
+}
+
+#banner h4 {
+  color: white;
+  font-size: 15px;
+  padding: 10px 0px;
+}
+
+#banner h2 {
+  color: white;
+  font-size: 30px;
+  padding: 5px 0;
+}
+
+#banner button {
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border:none;
+  outline: none;
+}
+
+#banner button:hover {
+  background-color: rgb(101, 215, 177);
+}
