@@ -1,7 +1,8 @@
 # Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript
 
 I got inspiration from this website:
-(https://youtu.be/P8YuWEkTeuE/)
+(https://youtu.be/P8YuWEkTeuE/) and github project (https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website).
+I made small change for this project. And just used for front-end practice, no commercial use.
 
 
 

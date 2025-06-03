@@ -60,7 +60,12 @@ body {
   justify-content: space-between;
   padding:30px 100px;
   background-color: rgb(219, 225, 230);
-  box-shadow: 0 3px 9px gainsboro;
+  box-shadow: 0 5px 15px gainsboro;
+  z-index: 1;
+  position:sticky;
+  top: 0;
+  left: 0;
+
 }
 
 .header > ul {
@@ -102,6 +107,180 @@ body {
 
 .coverPage{
   background-image: url(img/hero4.png);
-  height: 100vh;
+  height: 80vh;
   width: 100%;
+  background-size: cover;
+  padding: 0px 80px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:center;
+
+}
+
+.coverPage > h4 {
+  padding-bottom: 40px;
+}
+
+.coverPage >h1 {
+  color:rgb(97, 193, 161);
+}
+
+.coverPage > button {
+  background-image: url(img/button.png);
+  background-color: transparent;
+  border: 0;
+  color:rgb(97, 193, 161);
+
+  /* 将盒子模型撑大的方法 */
+  padding: 15px 50px 15px 50px;
+  font-size: 15px;
+  font-weight: 700;
+
+  /* 背景图案将不在横纵轴上重复 */
+  background-repeat: no-repeat;
+
+  /* 修改鼠标指针样式 */
+  cursor: pointer;
+}
+
+
+/* feature style */
+
+#feature{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center ;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+#feature > div {
+  width: 180px;
+  padding:30px 0px;
+
+  border: 1px solid cornsilk;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgb(225, 223, 223) ;
+  border-radius: 15px;
+
+}
+
+#feature > div:hover {
+  box-shadow: 5px 5px 30px rgb(226, 225, 225) ;
+}
+
+#feature > div > h6 {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 14px;
+  margin-top: 20px;
+  color: rgb(77, 148, 62);
+  background-color: rgb(241, 216, 219);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+#feature div:nth-child(2) h6 {
+  background-color: rgb(158, 245, 216);
+} 
+
+#feature div:nth-child(3) h6 {
+  background-color: rgb(158, 196, 245);
+} 
+
+#feature div:nth-child(4) h6 {
+  background-color: rgb(211, 193, 248);
+} 
+
+#feature div:nth-child(5) h6 {
+  background-color: rgb(243, 244, 200);
+} 
+
+#feature div:nth-child(6) h6 {
+  background-color: rgb(237, 199, 223);
+} 
+
+
+/* Product cart */
+
+#products1{
+  text-align: center;
+}
+
+.container1 {
+  margin: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
+}
+
+.product-cart {
+  padding: 20px 20px;
+  border: 1px solid rgb(225, 223, 223);
+  width: 20%;
+  min-width: 250px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 15px 15px 30px rgb(192, 191, 191);
+  position: relative;
+  margin: 30px 30px;
+
+
+}
+
+.product-cart:hover {
+  box-shadow: 5px 5px 45px rgb(207, 206, 206);
+
+}
+
+.product-cart img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cart-content {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.cart-content span {
+  color: #c7c3c3;
+  font-size: small;
+}
+
+.cart-content h5 {
+  padding-top: 10px;
+}
+
+.cart-content i {
+  padding-top: 10px;
+  color: rgb(245, 245, 6);
+  font-size: 12px;
+}
+
+.cart-content h4 {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 50px;
+  color: rgb(55, 207, 156);
+}
+
+.product-cart a i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  background-color: rgb(188, 245, 226);
+  position: absolute;
+  color: rgb(185, 183, 183);
+  right: 30px;
+   bottom: 30px;
+  cursor: pointer ;
 }
