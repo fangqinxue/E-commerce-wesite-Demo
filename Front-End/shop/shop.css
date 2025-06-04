@@ -1,0 +1,41 @@
+#coverPage2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../img/banner/b1.jpg);
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+}
+
+#coverPage2 h2 {
+    color: white;
+}
+
+#coverPage2 h4 {
+    color: white;
+}
+
+#page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page a {
+    
+    height: 5vh;
+    width: 5vh;
+    border-radius: 5px;
+    background-color: rgb(49, 179, 135);
+    color: white;
+    text-decoration: none;
+    margin-left: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
