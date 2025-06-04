@@ -498,6 +498,49 @@ body {
 }
 
 .footer1 a {
+  /* remove underline */
+  text-decoration: none;
+  color:rgb(174, 175, 177);
   display: block;
   padding: 10px;
+  font-size: 12px;
+}
+
+.footer1 h4 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.social {
+  margin-top: 50px;
+}
+
+.media i {
+  color: #465b52;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.row img {
+  border: 0.3px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.media i:hover {
+  color: rgb(26, 176, 126);
+}
+
+.footer1 a:hover {
+  color: rgb(15, 109, 78);
+}
+
+/* copyright */
+#copyright  {
+  text-align: center;
+}
+
+#copyright div p {
+  font-size: 12px;
 }
