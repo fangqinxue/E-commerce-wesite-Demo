@@ -6,14 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <section class="header">
-            <img src="../img/logo.png" alt="">
+            <img src="./img/logo.png" alt="">
             <ul>
                 <li><a  href="index.html">Home</a></li>
                 <li><a class='active' href="./shop/shop.html">Shop</a></li>
@@ -25,7 +25,35 @@
             </ul>
         </section>
 
-        <section id="singleProduct"></section>
+        <section id="singleProduct" class="section-p1 section-m1">
+            <div class="singleProImage">
+                <img src="img/products/f1.jpg" alt="" id="MainImg">
+                <div class="ProductImageGroup">
+                    <img src="img/products/f1.jpg" alt="" class="smallImg">
+                    <img src="img/products/f2.jpg" alt="" class="smallImg">
+                    <img src="img/products/f3.jpg" alt="" class="smallImg">
+                    <img src="img/products/f4.jpg" alt="" class="smallImg">
+                </div>
+            </div>
+
+            <div class="ProInformation">
+                <h6>Home / T-shirt</h6>
+                <h4>Men's Fashion T-shirt</h4>
+                <h2>$139.00</h2>
+                <select>
+                    <option >Select Size</option>
+                    <option >XL</option>
+                    <option >XXL</option>
+                    <option >S</option>
+                    <option >L</option>
+                </select>
+                <input type="number" value="1">
+                <button class="ButtonNormal">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span> Our Classic Cotton T-Shirt is made from 100% soft, breathable cotton for all-day comfort. 
+                    Perfect for casual wear, workouts, or layering. Available in multiple sizes and colors.</span>
+            </div>
+        </section>
 
         <section id="NewsLetter" class="section-p1 section-m1">
             <div>
@@ -34,13 +62,13 @@
             </div>
             <div class="form">
                 <input type="text" placeholder="Please enter your email address">
-                <button>Sign Up</button>
+                <button class="ButtonNormal">Sign Up</button>
             </div>
         </section>
     
         <section id="footer" class="section-p1 section-m1">
             <div class="footer1">
-                <img src="../img/logo.png" alt="">
+                <img src="./img/logo.png" alt="">
                 <p><strong>Address</strong> San Francisco</p>
                 <p><strong>Phone:</strong>+01 2222 365/(+91) 01 2345 6789</p>
                 <p><strong>Hours:</strong>10:00 - 18:00, Mon - Fri</p>
@@ -77,11 +105,11 @@
                 <h4>Install App</h4>
                 <p>From App Store or Google Play</p>
                 <div class="row">
-                    <img src="../img/pay/app.jpg" alt="">
-                    <img src="../img/pay/play.jpg" alt="">
+                    <img src="./img/pay/app.jpg" alt="">
+                    <img src="./img/pay/play.jpg" alt="">
                 </div>
                 <p>Secure Payment Gateway</p>
-                <img src="../img/pay/pay.png" alt="">
+                <img src="./img/pay/pay.png" alt="">
             </div>
     
     
@@ -96,6 +124,33 @@
 
         <script>
             // script for image change on click
+            var mainImg = document.getElementById('MainImg')
+            var smallImg = document.getElementsByClassName('smallImg')
+
+            // smallImg[0].onclick = function () {
+            //     mainImg.src = smallImg[0].src
+            // }
+
+            // smallImg[1].onclick = function () {
+            //     mainImg.src = smallImg[1].src
+            // }
+
+            // smallImg[2].onclick = function () {
+            //     mainImg.src = smallImg[2].src
+            // }
+
+            // smallImg[3].onclick = function () {
+            //     mainImg.src = smallImg[3].src
+            // }
+            // more modern way to fix it
+
+            for (let i = 0; i < smallImg.length; i++) {
+                    smallImg[i].addEventListener('click', function () {
+                        mainImg.src = this.src;
+                    });
+                }
+
+
         </script>
 
 

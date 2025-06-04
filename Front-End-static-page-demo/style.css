@@ -474,7 +474,7 @@ body {
   
 }
 
-.form button {
+.ButtonNormal {
   height: 3.125rem;
   padding: 0 1.5rem;
   font-weight: 800;
@@ -487,6 +487,7 @@ body {
   When applied, all the content inside the element stays on a single line, 
   even if it overflows the container */
   white-space: nowrap;
+  cursor: pointer;
 
   /* 将两块合并在一起，取消两块的一边border-radius */
   border-top-left-radius: 0;
@@ -546,4 +547,81 @@ body {
 
 #copyright div p {
   font-size: 12px;
+}
+
+
+
+
+
+
+/* sproduct */
+
+#singleProduct {
+  display: flex;
+}
+
+.singleProImage img {
+  /* 让图片适应父容器大小 */
+  width: 100%;
+  height: auto; /* 保持宽高比 */
+
+  /* 去掉可能的底部空白 */
+  display: block; 
+  margin-bottom: 10px;
+}
+
+.singleProImage {
+  width: 40%;
+  margin-right: 40px;
+}
+
+
+.ProductImageGroup {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1%;
+}
+
+.ProductImageGroup img{
+  width: 24%;
+  cursor: pointer;
+}
+
+.ProInformation {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.ProInformation h4 {
+  padding: 40px 0 30px 0;
+}
+
+.ProInformation h2 {
+  font-size: 28px;
+}
+
+.ProInformation select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 2vh;
+}
+
+.ProInformation input {
+  width: 50px;
+  height: 45px;
+  font-size: 16x;
+  text-align: center;
+}
+
+/* remove the outline of the input box */
+.ProInformation input:focus {
+  outline: none;
+}
+
+.ProInformation .ButtonNormal {
+  height: 45px;
+  border-radius: 5px;
+
 }
