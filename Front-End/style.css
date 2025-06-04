@@ -53,6 +53,7 @@ body {
 }
 
 
+/* header */
 
 .header {
   display:flex;
@@ -385,5 +386,118 @@ body {
 }
 
 .banner2-1:hover button {
-  background-color: rgb(69, 240, 183);
+  background-color: rgb(58, 211, 160);
+}
+
+/* banner 3 */
+
+#banner3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.banner3-card {
+  width: 30%;
+  min-width: 300px;
+  height: 25vh;
+  background-image: url(img/banner/b7.jpg);
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+}
+
+.banner3-card h2 {
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.banner3-card h4 {
+  color: rgb(215, 22, 22);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.banner3-card2 {
+  background-image: url(img/banner/b4.jpg);
+}
+
+.banner3-card3 {
+  background-image: url(img/banner/b18.jpg);
+}
+
+/* NewsLetter */
+#NewsLetter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(img/banner/b14.png);
+  background-size: cover;
+  background-color: rgb(57, 57, 112);
+
+}
+
+#NewsLetter div h2 {
+  font-size: 30px;
+  color: white;
+}
+
+#NewsLetter div h4 {
+  font-size: 20px;
+  color: rgb(205, 202, 202);
+}
+
+.form {
+  display: flex;
+  width: 40%;
+}
+
+.form input {
+  height: 3.125rem;
+  padding: 0 0.125rem;
+  width: 100%;
+  border: 0.3px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  
+}
+
+.form button {
+  height: 3.125rem;
+  padding: 0 1.5rem;
+  font-weight: 800;
+  border-radius: 5px;
+  border: 0.3px solid transparent;
+  outline: none;
+  background-color: rgb(61, 207, 158);
+  color: white;
+  /* prevent text from wrapping to the next line. 
+  When applied, all the content inside the element stays on a single line, 
+  even if it overflows the container */
+  white-space: nowrap;
+
+  /* 将两块合并在一起，取消两块的一边border-radius */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* footer */
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer1 a {
+  display: block;
+  padding: 10px;
 }
