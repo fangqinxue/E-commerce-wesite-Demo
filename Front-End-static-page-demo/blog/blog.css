@@ -1,0 +1,93 @@
+
+/* header */
+#coverPage3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-image: url(../img/banner/b19.jpg);
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#coverPage3 h2 {
+    font-size: 30px;
+    color: white;
+}
+
+#coverPage3 h4 {
+    font-size: 15px;
+    color: white;
+}
+
+/* Main */
+
+#blog {
+    padding: 150px 150px 0px 150px;
+}
+
+.blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+.blog-img img {
+    width: 100%;
+    height: 300px;
+
+    /* The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. */
+    object-fit: cover;
+}
+
+.blog-details {
+    width: 50%;
+}
+
+.blog-details a {
+    text-decoration: none;
+    font-size: 11px;
+    color:black;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+.blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    position:absolute;
+    background-color: black;
+    top: 4px;
+    right: -60px;
+}
+
+.blog-details a:hover {
+    color: rgb(22, 137, 22);
+}
+
+/* 伪类元素可以和伪类一起使用 */
+.blog-details a:hover::after {
+    background-color:  rgb(22, 137, 22);
+}
+
+.blog-box h2 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: rgb(201, 208, 214);
+    font-size: 70px;
+    font-weight: 700;
+    z-index: -1;
+}
