@@ -1,0 +1,80 @@
+#coverPage4{
+    background-image: url(../img/about/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#coverPage4 h2 {
+    color: white;
+}
+
+#coverPage4 h4 {
+    color: white;
+}
+
+
+/* about */
+
+#about {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    width: 50%;
+    height: auto;
+}
+
+.aboutInfor {
+    width: 50%;
+    padding: 30px;
+}
+/* <!-- here we won't use this tag as videos mentioned because it has been depracated --> */
+/* Marquee {
+    background-color: bisque;
+    color: rgb(170, 170, 170);
+    width: 100%;
+    loop="-1";
+    scrollamount="5";
+} */
+/* we try to use css animation to solve the problem */
+.scoll-text {
+    width: 100%;
+    background-color: bisque;
+    color: rgb(170, 170, 170);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scrolling{
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 15s linear infinite;
+  }
+
+@keyframes scroll {
+from {
+    transform: translateX(0);
+}
+to {
+    transform: translateX(-100%);
+}
+}
+
+
+/* video */
+#about-app {
+    text-align: center;
+}
+
+#about-app video {
+    width: 70%;
+    height: 100%;
+    margin-top: 30px;
+}
